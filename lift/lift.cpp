@@ -33,6 +33,7 @@ int main()
 {
 	setlocale(LC_ALL, "");
 
+	// just a comment
 	CLift lift = CLift(1, 9);
 	lift.Print();
 }
