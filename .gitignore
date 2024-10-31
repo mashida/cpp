@@ -10,3 +10,5 @@
 /copy-constructor/copy-constructor
 *.exe
 *.pdb
+/remind-01/.vs
+/remind-01/remind-01
