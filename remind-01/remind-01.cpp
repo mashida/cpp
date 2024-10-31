@@ -1,30 +1,18 @@
 ﻿#include <iostream>
+
 class Example {
-	int value;
+	int mValue;
 public:
-	int Value() { return value; }
-	void Value(int digit) { value = digit; }
+	// gtter & setter
+	int Value() { return mValue; }
+	// ctor & dtor
+	Example() = default;
+	Example(int value) : mValue(value) {};
+
 };
 
+int main() {
+	Example example = Example(10);
 
-void Print(int value)
-{
-	std::cout << value << "\n";
-}
-
-void Print(double value)
-{
-	std::cout << value << "\n";
-}
-
-int main()
-{
-	double doubleValue = 10.5;
-	int intValue = 5;
-	Print(doubleValue);
-	Print(intValue);
-
-	Example example;
-	example.Value(16);
 	std::cout << example.Value();
 }
